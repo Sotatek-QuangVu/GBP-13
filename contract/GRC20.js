@@ -1,4 +1,4 @@
-@contract class GLC20 {
+@contract class GRC20 {
     @state _balances = {};
     @state _allowances = {};
 
@@ -7,7 +7,7 @@
     @view @state _symbol;
     @view @state _decimals;
 
-     constructor(name_ : string, symbol_ : string, totalSupply_ : number, decimals_ : number) {
+     @transaction CONSTRUCTOR(name_ : string, symbol_ : string, totalSupply_ : number, decimals_ : number) {
         this._name = name_;
         this._symbol = symbol_;
         this._totalSupply = totalSupply_;
