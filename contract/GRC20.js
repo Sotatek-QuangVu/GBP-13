@@ -7,7 +7,7 @@
     @view @state _symbol;
     @view @state _decimals;
 
-     @transaction CONSTRUCTOR(name_ : string, symbol_ : string, totalSupply_ : number, decimals_ : number) {
+    constructor(name_ : string, symbol_ : string, totalSupply_ : number, decimals_ : number) {
         this._name = name_;
         this._symbol = symbol_;
         this._totalSupply = totalSupply_;
